@@ -13,26 +13,26 @@ The input file consists of three lines: the first line contains the guest's name
                                                             Output
 Print "YES" without the quotes, if the letters in the pile could be permuted to make the names of the "New Year and Christmas Men". Otherwise, print "NO" without the quotes.
 
-Examples
-input
+                  Examples
+                  input
                   SANTACLAUS
                   DEDMOROZ
                   SANTAMOROZDEDCLAUS
-output
+                  output
                   YES
-input
+                  input
                   PAPAINOEL
                   JOULUPUKKI
                   JOULNAPAOILELUPUKKI
-output
+                  output
                   NO
-input
+                  input
                   BABBONATALE
                   FATHERCHRISTMAS
                   BABCHRISTMASBONATALLEFATHER
-output
+                  output
                   NO
-Note
+                  Note
                   In the first sample the letters written in the last line can be used to write the names and there won't be any extra letters left.
                   In the second sample letter "P" is missing from the pile and there's an extra letter "L".
                   In the third sample there's an extra letter "L".
