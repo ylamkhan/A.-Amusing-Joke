@@ -1,0 +1,55 @@
+# include <iostream>
+# include <map>
+#include <vector>
+
+using namespace std;
+int main()
+{
+    string s1,s2,pile;
+    cin>>s1>>s2>>pile;
+    int count =0;
+    if(s1.size()+s2.size()<=pile.size())
+    {
+        int i=0;
+        while (s1[i])
+        {
+            int j =0;
+            while (pile[j])
+            {
+                if(s1[i]==pile[j])
+                {
+                    count++;
+                    pile[j]='1';
+                    break;
+
+                }
+                j++;
+            }
+            i++;
+        }
+        i=0;
+        while (s2[i])
+        {
+            int j =0;
+            while (pile[j])
+            {
+                if(s2[i]==pile[j])
+                {
+                    count++;
+                    pile[j]='1';
+                    break;
+                }
+                j++;
+            }
+            i++;
+        }
+        if (count == pile.size())
+            cout<<"YES"<<endl;
+        else
+            cout<<"NO"<<endl;
+        
+    }
+    else
+        cout<<"NO"<<endl;
+    
+}
